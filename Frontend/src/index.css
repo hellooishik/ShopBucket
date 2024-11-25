@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Styling for the active state */
+a.active hr {
+    display: block !important; /* Ensure visibility */
+    height: 2px;              /* Add height */
+    background-color: black;  /* Set a visible color */
+    transition: background-color 0.3s ease; /* Optional: Smooth transition */
+  }
+  
