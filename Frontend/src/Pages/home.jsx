@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Hero from '../Components/hero';
 
-const home = () => {
+const Home = () => {  // Make sure the component name is capitalized
   return (
-    <div></div>
-  )
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
-export default home
+export default Home;

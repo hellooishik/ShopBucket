@@ -7,9 +7,10 @@ import '../index.css';
 const Navbar = () => {
   // State for showing the responsive sidebar
   const [visible, setVisible] = useState(false);
-
+  // return the basic  things to logic       
   return (
     <div className='flex items-center justify-between py-5 font-sm'>
+      {/* the main module will be called out by the main set of the gnere  */}
       {/* Logo */}
       <img src={logo} alt="Logo" className="w-36" />
 
