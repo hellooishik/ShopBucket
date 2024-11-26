@@ -1,13 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+* {
+  font-family: "Outfit";
+}
 /* Styling for the active state */
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a.active hr {
-    display: block !important; /* Ensure visibility */
-    height: 2px;              /* Add height */
-    background-color: black;  /* Set a visible color */
-    transition: background-color 0.3s ease; /* Optional: Smooth transition */
-  }
-  
+  display: block !important; /* Ensure visibility */
+  height: 2px; /* Add height */
+  background-color: black; /* Set a visible color */
+  transition: background-color 0.3s ease; /* Optional: Smooth transition */
+}
