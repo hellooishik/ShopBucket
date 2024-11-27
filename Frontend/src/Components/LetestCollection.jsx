@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { ShopContext } from '../Context/shopContext'
+import { ShopContext } from '../Context/ShopContext'
 import { useContext } from 'react'
 import Tittle from './Tittle';
-import ProductItems from './productItems';
+import ProductItems from './ProductItems';
+// This set will be connected to the main domain chain overview  
 
 const LetestCollection = () => {
-
     const { products } = useContext(ShopContext);
     const [latestProducts, setLatestProducts] = useState([]);
 
@@ -13,6 +13,7 @@ const LetestCollection = () => {
         setLatestProducts(products.slice(0,10))
     }, [])
     console.log(products);
+
   return (
     <div className='my-10'>
         <div className='text-center py-8 text-3xl'>
@@ -30,6 +31,7 @@ const LetestCollection = () => {
             }
         </div>
     </div>
+    // this set will be set for the main module overview 
   )
 }
 

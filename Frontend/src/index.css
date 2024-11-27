@@ -22,3 +22,9 @@ a.active hr {
   background-color: black; /* Set a visible color */
   transition: background-color 0.3s ease; /* Optional: Smooth transition */
 }
+@media (max-width: 640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}

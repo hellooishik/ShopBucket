@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className='flex items-center justify-between py-5 font-sm'>
       {/* the main module will be called out by the main set of the gnere  */}
       {/* Logo */}
-      <img src={logo} alt="Logo" className="w-36" />
+      <Link to='/'><img src={logo} alt="Logo" className="w-36" /></Link>
 
       {/* Navigation Links */}
       <ul className='hidden sm:flex gap-5 text-lg text-gray-700'>
@@ -88,9 +88,10 @@ const Navbar = () => {
           />
           <p className='absolute -right-1 -bottom-1 w-4 text-xs text-white text-center leading-4 bg-black rounded-full'>
             10
+            {/* the main module will be set to the main set of total workspace      */}
           </p>
         </Link>
-
+        {/* cart_icon */}
         {/* Menu Icon for Mobile */}
         <img 
           onClick={() => setVisible(!visible)} 
@@ -99,10 +100,12 @@ const Navbar = () => {
           alt="Menu Icon" 
         />
       </div>
+      {/* sidebar for */}
 
       {/* Sidebar Menu for Mobile */}
       <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
         <div className='flex flex-col text-grey-600'>
+          {/* this set will beset to the main domain chain overview  */}
           <div 
             onClick={() => setVisible(false)} 
             className="flex items-center gap-4 p-3 cursor-pointer"
