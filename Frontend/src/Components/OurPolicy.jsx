@@ -10,6 +10,16 @@ const OurPolicy = () => {
             <p className='font-semibold'>Easy Exchange Policies</p>
             <p className='text-gray-700'>We Offers hustle free Exhange Policies</p>
         </div>
+        <div>
+            <img src={assets.quality_icon} className='w-10 m-auto mb-5' alt="" srcset="" />
+            <p className='font-semibold'>7 Days Return Policies</p>
+            <p className='text-gray-700'>We Provide 7 Days Return Policies</p>
+        </div>
+        <div>
+            <img src={assets.support_img} className='w-10 m-auto mb-5' alt="" srcset="" />
+            <p className='font-semibold'>Best Customer Support</p>
+            <p className='text-gray-700'>We Provide 24/7 Customer Support</p>
+        </div>
     </div>
   )
 }

@@ -11,6 +11,7 @@ import Product from './Pages/product';
 import PlaceOrder from './Pages/placeorder';
 import Navbar from './Components/navbar';
 import "./index.css"
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/product' element={<Product />} />
         <Route path='/placeorder' element={<PlaceOrder />} />
       </Routes>
+      <Footer/>
     </div>
   );
 };
