@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { assets } from "../assets/assets";
 import logo from '../assets/logo.png'; // Directly import the logo image
 import { NavLink, Link } from 'react-router-dom'; // Ensure Link is imported
 import '../index.css';
+import { ShopContext } from '../Context/ShopContext';
 
 const Navbar = () => {
   // State for showing the responsive sidebar
   const [visible, setVisible] = useState(false);
+  const {setShowSearch } = useContext(ShopContext);
   // return the basic  things to logic       
   return (
     <div className='flex items-center justify-between py-5 font-sm'>
@@ -57,7 +59,7 @@ const Navbar = () => {
       {/* Icons Section */}
       <div className='flex items-center gap-5'>
         {/* Search Icon */}
-        <img 
+        <img onClick={()=>setShowSearch(true)}
           src={assets.search_icon} 
           className='w-6 cursor-pointer' 
           alt="Search Icon" 

@@ -26,6 +26,8 @@ const Footer = () => {
             <ul className='flex flex-col gap-1 text-gray-600'>
                 <li>+1 2200 5520 5520</li>
                 <li>admin@forever.com</li>
+
+                {/* The set to integere will be set to the main frame  */}
                
             </ul>
         </div>
@@ -33,7 +35,7 @@ const Footer = () => {
     </div>
     <div className='text-center'>
         <hr />
-        <p className='text-gray-600 font-medium py-5 mb-5'>Copyright @2024 Forever || All rights Reserve</p>
+        <p className='text-gray-600 font-medium py-5 mb-5'>Copyright @2024 Forever ||    All rights Reserve</p>
         </div>
     </div>
   )
