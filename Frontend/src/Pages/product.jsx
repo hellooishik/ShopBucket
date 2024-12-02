@@ -185,12 +185,18 @@ const Product = () => {
                 setReview((prev) => ({ ...prev, comment: e.target.value }))
               }
             />
+                <div className="flex justify-start my-10">
+                <div className="w-full sm:w-[450px]">
             <button
               type="submit"
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              className="w-full text-center bg-black text-white text-xl my-2 px-8 py-8"
             >
               Submit Review
             </button>
+            </div>
+            </div>
+        
+
           </form>
         </div>
       </div>
