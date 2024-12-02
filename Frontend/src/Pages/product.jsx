@@ -107,28 +107,28 @@ const Product = () => {
           </button>
         </div>
       </div>
+{/* Related Products */}
+<div className="mt-10">
+  <h2 className="text-xl font-semibold mb-4">Related Products</h2>
+  <div className="flex gap-6 overflow-x-auto">
+    {relatedProducts.map((item) => (
+      <Link
+        to={`/product/${item._id}`}
+        key={item._id}
+        className="flex-shrink-0 w-60 border p-4 rounded-lg hover:shadow-md transition-shadow"
+      >
+        <img
+          src={item.image[0]}
+          alt={item.name}
+          className="w-full h-40 object-cover rounded-lg"
+        />
+        <h3 className="text-lg font-semibold mt-2">{item.name}</h3>
+        <p className="text-green-600 font-bold">${item.price}</p>
+      </Link>
+    ))}
+  </div>
+</div>
 
-      {/* Related Products */}
-      <div className="mt-10">
-        <h2 className="text-xl font-semibold mb-4">Related Products</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {relatedProducts.map((item) => (
-            <Link
-              to={`/product/${item._id}`}
-              key={item._id}
-              className="block border p-4 rounded-lg hover:shadow-md transition-shadow"
-            >
-              <img
-                src={item.image[0]}
-                alt={item.name}
-                className="w-full h-40 object-cover rounded-lg"
-              />
-              <h3 className="text-lg font-semibold mt-2">{item.name}</h3>
-              <p className="text-green-600 font-bold">${item.price}</p>
-            </Link>
-          ))}
-        </div>
-      </div>
 
       {/* Customer Reviews */}
       <div className="mt-10">

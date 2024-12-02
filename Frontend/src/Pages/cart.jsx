@@ -12,6 +12,7 @@ const Cart = () => {
   useEffect(() => {
     const tempData = [];
     let tempTotalPrice = 0;
+    // this will set the tempData overview
 
     for (const productId in cartItems) {
       for (const size in cartItems[productId]) {
