@@ -8,7 +8,7 @@ import { ShopContext } from '../Context/ShopContext';
 const Navbar = () => {
   // State for showing the responsive sidebar
   const [visible, setVisible] = useState(false);
-  const {setShowSearch } = useContext(ShopContext);
+  const {setShowSearch, getCartCount } = useContext(ShopContext);
   // return the basic  things to logic       
   return (
     <div className='flex items-center justify-between py-5 font-sm'>
@@ -89,7 +89,7 @@ const Navbar = () => {
             alt="Cart Icon" 
           />
           <p className='absolute -right-1 -bottom-1 w-4 text-xs text-white text-center leading-4 bg-black rounded-full'>
-            10
+            {getCartCount()}
             {/* the main module will be set to the main set of total workspace      */}
           </p>
         </Link>
